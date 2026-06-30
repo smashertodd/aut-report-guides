@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reports: Business – AUT Library</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+      color: #333;
+      line-height: 1.6;
+    }
+    h2 { color: #003057; }
+    h3 { color: #003057; margin-top: 2em; }
+    h4 { color: #003057; }
+    .callout {
+      background: #eaf4fb;
+      border-left: 4px solid #236fa1;
+      padding: 16px 20px;
+      margin: 16px 0;
+      border-radius: 4px;
+      font-size: 1.1em;
+      color: #236fa1;
+    }
+    .accessible-link {
+      text-align: right;
+      margin: 8px 0 4px;
+    }
+    .accessible-link a { color: #236fa1; }
+    .accessible-note {
+      text-align: right;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 0;
+    }
+    img { max-width: 100%; height: auto; display: block; margin: 12px 0; }
+    .fig-caption { font-size: 0.9em; color: #555; margin-bottom: 16px; }
+
+    /* Tabs */
+    .tabs { margin: 20px 0; }
+    .tab-trigger-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      border-bottom: 2px solid #003057;
+    }
+    .tab-trigger-list li {
+      padding: 8px 16px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      border-radius: 4px 4px 0 0;
+      background: #f4f4f4;
+      color: #003057;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
+    .tab-trigger-list li.active {
+      background: #003057;
+      color: #fff;
+      border-color: #003057;
+    }
+    .tab-content { display: none; padding: 20px 0; }
+    .tab-content.active { display: block; }
+
+    /* Accordion */
+    .accordion-header {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px 16px;
+      cursor: pointer;
+      margin-top: 16px;
+    }
+    .accordion-header h4 { margin: 0; color: #003057; }
+    .accordion-content {
+      border: 1px solid #ccc;
+      border-top: none;
+      padding: 16px 20px;
+      display: none;
+      border-radius: 0 0 4px 4px;
+    }
+    .accordion-content.open { display: block; }
+    p.ref {
+      margin-left: 20px;
+      text-indent: -36px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Reports:</h2>
+  <h2>Business</h2>
+
+  <div class="callout">
+    Reports communicate findings from research, experiments, or other activities.
+    They are clearly structured, so they can be read quickly.
+  </div>
+
+  <p class="accessible-link">
+    <a href="https://canvas.aut.ac.nz/courses/7624/files/4040423?wrap=1" target="_blank" rel="noopener">
+      Download an accessible version
+    </a>
+  </p>
+  <p class="accessible-note">(for students who use screen readers)</p>
+
+  <!-- HOW TO WRITE -->
+  <h3 id="how-to-write">How to write a report</h3>
+
+  <h4>Step 1: Identify the issue</h4>
+  <p>Reports usually focus on specific issues or situations. For example, a student has to investigate possible solutions for a company's human resource information system:</p>
+  <img src="Figure%201%20Example%20report%20assessment%20task.PNG" alt="Figure 1: An example report assessment task" />
+  <p class="fig-caption">Figure 1: Example report assessment task</p>
+
+  <h4>Step 2: Analyse the issue and generate findings and conclusions</h4>
+  <p>You usually need to use concepts and models from the course to analyse an issue, so that you can:</p>
+  <ul>
+    <li>generate findings,</li>
+    <li>discuss those findings by connecting them with course readings and other literature,</li>
+    <li>reach conclusions based on the findings, and</li>
+    <li>make recommendations based on the conclusions.</li>
+  </ul>
+
+  <!-- TABS: How to write sub-sections -->
+  <div class="tabs" id="generating-findings">
+    <ul class="tab-trigger-list">
+      <li class="active" onclick="switchTab(this, 'gen-tab-1')">Generating findings</li>
+      <li id="planning-discussion" onclick="switchTab(this, 'gen-tab-2')">Planning the discussion</li>
+      <li id="reaching-conclusions" onclick="switchTab(this, 'gen-tab-3')">Reaching conclusions</li>
+      <li id="making-recommendations" onclick="switchTab(this, 'gen-tab-4')">Making recommendations</li>
+    </ul>
+
+    <div id="gen-tab-1" class="tab-content active">
+      <p>Generate your findings by analysing information about an issue. Record your findings in a table or spreadsheet and use them to generate conclusions and recommendations to include in your report:</p>
+      <img src="Figure%202%20Connecting%20a%20finding%20with%20a%20conclusion%20and%20a%20recommendation.PNG" alt="Figure 2: Connecting a finding with a conclusion and a recommendation" />
+      <p class="fig-caption">Figure 2: Connecting a finding with a conclusion and a recommendation</p>
+      <p>There are multiple methods for <a href="https://canvas.aut.ac.nz/courses/7624/pages/analyse-information-business" style="color:#236fa1;">analysing information</a>, so check if there is a specific one you need to use.</p>
+    </div>
+
+    <div id="gen-tab-2" class="tab-content">
+      <p>Create an ideas map to help you organise the discussion because this is where the most detailed information goes. For example, this discussion has four main sub-sections, and some of those have their own sub-sections:</p>
+      <img src="Figure%203%20How%20to%20organise%20a%20discussion%20section.PNG" alt="Figure 3: How to organise a discussion section" />
+      <p class="fig-caption">Figure 3: How to organise a discussion section</p>
+    </div>
+
+    <div id="gen-tab-3" class="tab-content">
+      <p>The conclusions need to be based on your findings. Do not introduce any new points. For each finding, identify its significance. Doing this will help you generate specific conclusions:</p>
+      <img src="Figure%204%20Conclusions%20are%20based%20on%20findings.PNG" alt="Figure 4: Conclusions are based on findings" />
+      <p class="fig-caption">Figure 4: Conclusions are based on findings</p>
+    </div>
+
+    <div id="gen-tab-4" class="tab-content">
+      <p>Recommendations identify specific future actions, and they need to be based on your conclusions. A table can help with matching recommendations to conclusions:</p>
+      <img src="Figure%205%20Recommendations%20are%20based%20on%20conclusions.PNG" alt="Figure 5: Recommendations are based on conclusions" />
+      <p class="fig-caption">Figure 5: Recommendations are based on conclusions</p>
+    </div>
+  </div>
+
+  <h4>Step 3: Write your report</h4>
+  <p>Reports usually have distinct sections, with headings and sub-headings. Check your assessment task instructions for the specific sections you need to include.</p>
+
+  <!-- REPORT SECTIONS -->
+  <h3 id="report-sections">Examples of common report sections</h3>
+
+  <div class="tabs">
+    <ul class="tab-trigger-list">
+      <li class="active" id="executive-summary" onclick="switchTab(this, 'sec-tab-1')">Executive Summary</li>
+      <li id="introduction" onclick="switchTab(this, 'sec-tab-2')">Introduction</li>
+      <li id="discussion" onclick="switchTab(this, 'sec-tab-3')">Discussion</li>
+      <li id="conclusions" onclick="switchTab(this, 'sec-tab-4')">Conclusions</li>
+      <li id="recommendations" onclick="switchTab(this, 'sec-tab-5')">Recommendations</li>
+    </ul>
+
+    <div id="sec-tab-1" class="tab-content active">
+      <p>An executive summary is a summary of the whole report on one page. It often has six parts:</p>
+      <img src="Figure%206%20Example%20executive%20summary.png" alt="Figure 6: Example executive summary" />
+      <p class="fig-caption">Figure 6: Example executive summary</p>
+    </div>
+
+    <div id="sec-tab-2" class="tab-content">
+      <p>The introduction section provides an overview of what the reader can expect in the report, and the sequence in which the information will appear. Some common introduction parts are:</p>
+      <img src="Figure%207%20Example%20introduction%20section.PNG" alt="Figure 7: Example introduction section" />
+      <p class="fig-caption">Figure 7: Example introduction section</p>
+    </div>
+
+    <div id="sec-tab-3" class="tab-content">
+      <p>The discussion section contains the detailed information in your report. It is organised into numbered sub-sections which may contain further sub-sections. Connect the issue and findings with content from your course readings and other sources:</p>
+      <img src="Figure%208%20Example%20discussion%20paragraph.PNG" alt="Figure 8: Example discussion paragraph" />
+      <p class="fig-caption">Figure 8: Example discussion paragraph</p>
+    </div>
+
+    <div id="sec-tab-4" class="tab-content">
+      <p>The conclusions section brings together the main findings from the discussion and provides an outline of each finding's significance:</p>
+      <img src="Figure%209%20Example%20conclusions%20section.PNG" alt="Figure 9: Example conclusions section" />
+      <p class="fig-caption">Figure 9: Example conclusions section</p>
+    </div>
+
+    <div id="sec-tab-5" class="tab-content">
+      <p>The recommendations section is where you state specific actions that are based on your conclusions. List the actions in order of importance, and use clear, concise language:</p>
+      <img src="Figure%2010%20Example%20recommendations%20section.PNG" alt="Figure 10: Example recommendations section" />
+      <p class="fig-caption">Figure 10: Example recommendations section</p>
+    </div>
+  </div>
+
+  <!-- REFERENCES -->
+  <div id="references">
+    <div class="accordion-header" onclick="toggleAccordion(this)">
+      <h4>References</h4>
+    </div>
+    <div class="accordion-content">
+      <p class="ref">Gale, S. F. (2018, May 21). Blockchain: The future of HR? <em>Workforce</em>. <a href="https://workforce.com/news/blockchain-future-hr" target="_blank" rel="noopener">https://workforce.com/news/blockchain-future-hr</a></p>
+      <p class="ref">Jahan, S. (2014). Human Resources Information System (HRIS): A theoretical perspective. <em>Journal of Human Resource and Sustainability Studies</em>, 2, 33–39. <a href="http://dx.doi.org/10.4236/jhrss.2014.22004" target="_blank" rel="noopener">http://dx.doi.org/10.4236/jhrss.2014.22004</a></p>
+      <p class="ref">Wright, A. D. (2018, January 26). 6 HR tech trends for 2018. <em>HR Magazine</em>. <a href="https://www.shrm.org/hr-today/news/hr-magazine/0218/pages/top-6-hr-technology-trends-for-2018.aspx" target="_blank" rel="noopener">https://www.shrm.org/hr-today/news/hr-magazine/0218/pages/top-6-hr-technology-trends-for-2018.aspx</a></p>
+      <p class="ref">Zielinski, D. Z. (2018, February 23). Is HR ready for blockchain? <em>HR Magazine</em>. <a href="https://www.shrm.org/hr-today/news/hr-magazine/0318/pages/is-hr-ready-for-blockchain.aspx" target="_blank" rel="noopener">https://www.shrm.org/hr-today/news/hr-magazine/0318/pages/is-hr-ready-for-blockchain.aspx</a></p>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(clickedLi, targetId) {
+      // Find the parent tabs div
+      var tabsDiv = clickedLi.closest('.tabs');
+      // Deactivate all tab triggers
+      tabsDiv.querySelectorAll('.tab-trigger-list li').forEach(function(li) {
+        li.classList.remove('active');
+      });
+      // Hide all tab contents
+      tabsDiv.querySelectorAll('.tab-content').forEach(function(tc) {
+        tc.classList.remove('active');
+      });
+      // Activate clicked tab and content
+      clickedLi.classList.add('active');
+      document.getElementById(targetId).classList.add('active');
+    }
+
+    function toggleAccordion(header) {
+      var content = header.nextElementSibling;
+      content.classList.toggle('open');
+    }
+
+    // Deep-link support: open the correct tab on page load based on URL hash
+    window.addEventListener('DOMContentLoaded', function () {
+      var hash = window.location.hash.replace('#', '');
+      if (!hash) return;
+
+      var hashToTab = {
+        'generating-findings':    { tabsIndex: 0, tabId: 'gen-tab-1', liIndex: 0 },
+        'planning-discussion':    { tabsIndex: 0, tabId: 'gen-tab-2', liIndex: 1 },
+        'reaching-conclusions':   { tabsIndex: 0, tabId: 'gen-tab-3', liIndex: 2 },
+        'making-recommendations': { tabsIndex: 0, tabId: 'gen-tab-4', liIndex: 3 },
+        'executive-summary':      { tabsIndex: 1, tabId: 'sec-tab-1', liIndex: 0 },
+        'introduction':           { tabsIndex: 1, tabId: 'sec-tab-2', liIndex: 1 },
+        'discussion':             { tabsIndex: 1, tabId: 'sec-tab-3', liIndex: 2 },
+        'conclusions':            { tabsIndex: 1, tabId: 'sec-tab-4', liIndex: 3 },
+        'recommendations':        { tabsIndex: 1, tabId: 'sec-tab-5', liIndex: 4 },
+        'references':             { accordion: true }
+      };
+
+      var allTabs = document.querySelectorAll('.tabs');
+      var config = hashToTab[hash];
+      if (!config) return;
+
+      if (config.accordion) {
+        var acc = document.getElementById('references');
+        if (acc) {
+          var content = acc.querySelector('.accordion-content');
+          if (content) content.classList.add('open');
+          acc.scrollIntoView({ behavior: 'smooth' });
+        }
+        return;
+      }
+
+      var tabsDiv = allTabs[config.tabsIndex];
+      if (!tabsDiv) return;
+
+      tabsDiv.querySelectorAll('.tab-trigger-list li').forEach(function(li) {
+        li.classList.remove('active');
+      });
+      tabsDiv.querySelectorAll('.tab-content').forEach(function(tc) {
+        tc.classList.remove('active');
+      });
+
+      var lis = tabsDiv.querySelectorAll('.tab-trigger-list li');
+      if (lis[config.liIndex]) lis[config.liIndex].classList.add('active');
+      var targetContent = document.getElementById(config.tabId);
+      if (targetContent) targetContent.classList.add('active');
+
+      tabsDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
